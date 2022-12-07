@@ -29,6 +29,7 @@ gulp.task('styles', function () {
 			cascade: false
 		}))
         .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest('src/css'))
         .pipe(gulp.dest('dist/css'))  // папка компиляции css файла src/css or dist/css
         .pipe(browserSync.stream());
 });
