@@ -40,7 +40,7 @@ gulp.task('watch', function () {
     gulp.watch('src/*.html').on('change', gulp.parallel('html'));
     gulp.watch('src/js/**/*.js').on('change', gulp.parallel('scripts'));   
     gulp.watch('src/fonts/**/*').on('add', gulp.parallel('fonts'));
-    gulp.watch('src/icons/**/*').on('add', gulp.parallel('icons'));
+    gulp.watch('src/icons/**/*').on('all', gulp.parallel('icons'));
     gulp.watch('src/img/**/*').on('add', gulp.parallel('img'));   
 
 
