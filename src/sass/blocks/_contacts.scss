@@ -49,6 +49,19 @@
             top: -8px;
             left: 12px;
         }
+    } 
+    &__triggers {
+        display: grid;
+        grid-column: 1/3; 
+        grid-template-columns: repeat(2, auto);
+        column-gap: 35px;
+    }
+    &__policy {
+        font-size: 12px;
+        align-self: center;
+        input {
+            margin-right: 10px;
+        }
     }
     &__input {
         position: relative;
@@ -76,4 +89,5 @@
         font-size: 14px;
         line-height: 21px;
     }
+    
 }
