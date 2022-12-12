@@ -68,8 +68,18 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/Photo.jpg" alt="photo" >
+                    <!-- <img 
+                    srcset="img/photo-min.jpg 300w, img/photo.jpg 400w"
+                    sizes="(max-width: 576px) 280px, (min-width: 577px) 400px"
+                    src="img/photo.jpg" alt="photo" > -->
+                    <picture>
+                        <source media="(max-width: 576px)" srcset="img/photo-min.jpg">
+                        <source media="(min-width: 577px)" srcset="img/photo.jpg">
+                        <img src="img/photo.jpg" alt="photo">
+    
+                    </picture>
                 </div>
+                
                 
                 <div class="about__descr">
                     <h2 class="title title_fs16 about__title">Про меня</h2>
@@ -115,7 +125,7 @@
             </div>
         </div>
     </section>
-    <!-- <section class="experience">
+    <section class="experience">
         <div class="container">
             <h2 class="title title_fs16 title__section-title">Опыт</h2>
             <div class="title title_fs36 title__section-subtitle">Чем я буду полезн</div>
@@ -123,7 +133,7 @@
 
             <div class="experience__wrapper">
                 <div class="experience__column">
-                    <h3 class="title title-fs20 experience__column-title">Образование</h3>
+                    <h3 class="title title_fs20 experience__column-title">Образование</h3>
                     <ul>
                         <li>
                             <div class="experience__item">
@@ -157,7 +167,7 @@
                     </ul>
                 </div>
                 <div class="experience__column">
-                    <h3 class="title title-fs20 experience__column-title">Опыт работы</h3>
+                    <h3 class="title title_fs20 experience__column-title">Опыт работы</h3>
                     <ul>
                         <li>
                             <div class="experience__item">
@@ -193,8 +203,8 @@
             </div>
             
         </div>
-    </section> -->
-    <!-- <section class="skills">
+    </section>
+    <section class="skills">
         <div class="container">
             <h2 class="title title_fs16 title__section-title">Навыки</h2>
             <div class="title title_fs36 title__section-subtitle">Что я использую в работе</div>
@@ -204,49 +214,49 @@
                     <div class="skills__img">
                         <img src="icons/skills/html5.svg" alt="html5">
                     </div>
-                    <div class="skills__descr">HTML5</div>
+                    <div class="title title_fs14 skills__descr">HTML5</div>
                     <div class="skills__text">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
                 </div>
                 <div class="skills__item">
                     <div class="skills__img">
                         <img src="icons/skills/css3.svg" alt="css3">
                     </div>
-                    <div class="skills__descr">CSS3</div>
+                    <h3 class="title title_fs14 skills__descr">CSS3</h3>
                     <div class="skills__text">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
                 </div>
                 <div class="skills__item">
                     <div class="skills__img">
                         <img src="icons/skills/JS.svg" alt="js">
                     </div>
-                    <div class="skills__descr">Java Script</div>
+                    <h3 class="title title_fs14 skills__descr">Java Script</h3>
                     <div class="skills__text">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
                 </div>
                 <div class="skills__item">
                     <div class="skills__img">
                         <img src="icons/skills/Jquery.svg" alt="Jquery">
                     </div>
-                    <div class="skills__descr">Jquery</div>
+                    <h3 class="title title_fs14 skills__descr">Jquery</h3>
                     <div class="skills__text">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
                 </div>
                 <div class="skills__item">
                     <div class="skills__img">
                         <img src="icons/skills/React.svg" alt="react">
                     </div>
-                    <div class="skills__descr">React</div>
+                    <h3 class="title title_fs14 skills__descr">React</h3>
                     <div class="skills__text">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</div>
                 </div>
                 <div class="skills__item">
                     <div class="skills__img">
                         <img src="icons/skills/Node.js.svg" alt="node">
                     </div>
-                    <div class="skills__descr">Node.js</div>
+                    <h3 class="title title_fs14 skills__descr">Node.js</h3>
                     <div class="skills__text">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</div>
                 </div>
                 <div class="skills__item">
                     <div class="skills__img">
                         <img src="icons/skills/Mongo.db.svg" alt="mongo">
                     </div>
-                    <div class="skills__descr">Mongo.db</div>
+                    <h3 class="title title_fs14 skills__descr">Mongo.db</h3>
                     <div class="skills__text">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</div>
                 </div>
             </div>
@@ -308,7 +318,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- <section class="portfolio">
         <div class="container">
             <h2 class="title title_fs16 title__section-title">Портфолио</h2>

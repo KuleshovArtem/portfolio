@@ -1,4 +1,4 @@
-@media (max-width: 1439px) {
+@media (max-width: 1300px) {
     .sidepanel {
         display: none;
     }
@@ -17,8 +17,29 @@
             grid-template: repeat(2,minmax(115px,auto))/repeat(2,240px);
         }
         &__skill {
-            grid-template-columns: 40px 190px;
+            grid-template-columns: 40px 180px;
             column-gap: 15px;
+        }
+    }
+    .experience {
+        &__wrapper {
+            padding: 60px 45px 0 45px;
+            grid-template-columns: repeat(2,380px);
+            column-gap: 80px;
+        }
+        &__column {
+            ul {
+                li {
+                    &::after {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(3,300px);
         }
     }
 }
@@ -45,6 +66,22 @@
             column-gap: 20px;
         }
     }
+    .experience {
+        &__wrapper {
+            padding: 60px 40px 0 40px;
+            grid-template-columns: repeat(2,300px);
+            column-gap: 60px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(2,340px);
+        } 
+        .progress {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+    
 }
 
 @media (max-width: 768px) {
@@ -78,6 +115,24 @@
             column-gap:20px;
         }
     }
+    .experience {
+        &__wrapper {
+            padding: 60px 20px 0 20px;
+            grid-template-columns: repeat(2,240px);
+            column-gap: 30px;
+        }
+    }
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(2,270px);
+        }
+        .progress {
+            margin-top: 40px;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 40px;
+        }
+    }
+    
 }
 
 @media (max-width: 576px) {
@@ -115,5 +170,19 @@
             grid-template-columns: 1fr;
         }
     }
-
+    .experience {
+        &__wrapper {
+            padding: 40px 20px 0 20px;
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+        }
+    }
+    .skills {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        
+    }
 }
