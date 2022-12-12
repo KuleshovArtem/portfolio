@@ -1,0 +1,119 @@
+@media (max-width: 1439px) {
+    .sidepanel {
+        display: none;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 500px;
+            column-gap: 40px;
+        }
+        &__skills {
+            column-gap:20px;
+            grid-template: repeat(2,minmax(115px,auto))/repeat(2,240px);
+        }
+        &__skill {
+            grid-template-columns: 40px 190px;
+            column-gap: 15px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        &_fs36 {
+            font-size: 30px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+        }
+        &__skills {
+            grid-template-columns: 380px;
+            grid-auto-rows: minmax(115px, auto);
+        }
+        &__skill {
+            grid-template-columns: 40px 320px;
+            column-gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        &_fs48 {
+            font-size: 28px;
+        }
+    }
+    .promo {
+        &__title {
+            width: 300px;
+            line-height: 39px;
+        }
+    }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: 400px auto auto / 1fr;
+        }
+        &__photo {
+            grid-row: unset;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 260px);
+        }
+        &__skill {
+            grid-template-columns: 40px 200px;
+            column-gap:20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &_fs48 {
+            font-size: 26px;
+        }
+        &_fs36 {
+            font-size: 24px;
+        }
+    }
+    .humburger {
+        right: 20px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .promo {
+        &__btns {
+            margin-top: 30px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template: 340px auto auto / 1fr;
+        }
+        &__skills {
+            grid-template-columns: 1fr;
+        }
+    }
+
+}
